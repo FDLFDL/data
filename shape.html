@@ -566,68 +566,198 @@
             content: "";
             position: absolute;
         }
+
+        /*30.菱形*/
+        #rhombus {
+            width: 0;
+            height: 0;
+            border: 50px solid transparent;
+            border-bottom-color: red;
+            position: relative;
+            top: -50px;
+        }
+        #rhombus:after {
+            content: '';
+            position: absolute;
+            left: -50px;
+            top: 50px;
+            width: 0;
+            height: 0;
+            border: 50px solid transparent;
+            border-top-color: red;
+        }
+
+        /*31、盾形*/
+        #peltate {
+            width: 0;
+            height: 0;
+            border: 50px solid transparent;
+            border-bottom: 20px solid red;
+            position: relative;
+            top: -50px;
+        }
+        #peltate:after {
+            content: '';
+            position: absolute;
+            left: -50px; top: 20px;
+            width: 0;
+            height: 0;
+            border: 50px solid transparent;
+            border-top: 70px solid red;
+        }
+
+        /*32、方块*/
+        #diamonds {
+            width: 0;
+            height: 0;
+            border: 50px solid transparent;
+            border-bottom: 70px solid red;
+            position: relative;
+            top: -50px;
+        }
+        #diamonds:after {
+            content: '';
+            position: absolute;
+            left: -50px; top: 70px;
+            width: 0;
+            height: 0;
+            border: 50px solid transparent;
+            border-top: 70px solid red;
+        }
+
+        /*33、箭头*/
+        #arrows {
+            position: relative;
+            width: 0;
+            height: 0;
+            border-top: 9px solid transparent;
+            border-right: 9px solid red;
+            -webkit-transform: rotate(10deg);
+            -moz-transform: rotate(10deg);
+            -ms-transform: rotate(10deg);
+            -o-transform: rotate(10deg);
+        }
+        #arrows:after {
+            content: "";
+            position: absolute;
+            border: 0 solid transparent;
+            border-top: 3px solid red;
+            border-radius: 20px 0 0 0;
+            top: -12px;
+            left: -9px;
+            width: 12px;
+            height: 12px;
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+        }
+
+        /*34、徽章带*/
+        #badge-ribbon {
+            position: relative;
+            background: red;
+            height: 100px;
+            width: 100px;
+            -moz-border-radius: 50px;
+            -webkit-border-radius: 50px;
+            border-radius: 50px;
+        }
+        #badge-ribbon:before, #badge-ribbon:after {
+            content: '';
+            position: absolute;
+            border-bottom: 70px solid red;
+            border-left: 40px solid transparent;
+            border-right: 40px solid transparent;
+            top: 70px;
+            left: -10px;
+            -webkit-transform: rotate(-140deg);
+            -moz-transform: rotate(-140deg);
+            -ms-transform: rotate(-140deg);
+            -o-transform: rotate(-140deg);
+        }
+        #badge-ribbon:after {
+            left: auto;
+            right: -10px;
+            -webkit-transform: rotate(140deg);
+            -moz-transform: rotate(140deg);
+            -ms-transform: rotate(140deg);
+            -o-transform: rotate(140deg);
+        }
+
+
     </style>
 </head>
 <body>
 <div class="box">
-<span>1、长方形</span>
-<div id="Rectangle"></div>
-<span>2、正方形</span>
-<div id="square"></div>
-<span>3、圆形</span>
-<div id="perfect-circle"></div>
-<span>4、圈</span>
-<div id="circle"></div>
-<span>5、椭圆</span>
-<div id="ellipse"></div>
-<span>6、上三角</span>
-<div id="triangle-up"></div>
-<span>7、下三角</span>
-<div id="triangle-down"></div>
-<span>8、左三角</span>
-<div id="triangle-left"></div>
-<span>9、右三角</span>
-<div id="triangle-right"></div>
-<span>10、顶左</span>
-<div id="triangle-topleft"></div>
-<span>11、顶右</span>
-<div id="triangle-topright"></div>
-<span>12、底左</span>
-<div id="triangle-bottomleft"></div>
-<span>13、底右</span>
-<div id="triangle-bottomright"></div>
-<span>14、平行四边形</span>
-<div id="parallelogram"></div>
-<span>15、梯形</span>
-<div id="trapezoid"></div>
-<span>16、五角星</span>
-<div id="star-five"></div>
-<span>17、六角星</span>
-<div id="star-six"></div>
-<span>18、五边形</span>
-<div id="pentagon"></div>
-<span>19、六边形</span>
-<div id="hexagon"></div>
-<span>20、八边形</span>
-<div id="octagon"></div>
-<span>21、心形</span>
-<div id="heart"></div>
-<span>22、无穷大</span>
-<div id="infinity"></div>
-<span>23、鸡蛋</span>
-<div id="egg"></div>
-<span>24、吃豆人</span>
-<div id="pacman"></div>
-<span>25、提示对话框</span>
-<div id="talkbubble"></div>
-<span>26、爆炸-12</span>
-<div id="burst-12"></div>
-<span>27、爆炸-8</span>
-<div id="burst-8"></div>
-<span>28、钻石</span>
-<div id="diamond"></div>
-<span>29、阴阳</span>
-<div id="yin-yang"></div>
+    <span>1、长方形</span>
+    <div id="Rectangle"></div>
+    <span>2、正方形</span>
+    <div id="square"></div>
+    <span>3、圆形</span>
+    <div id="perfect-circle"></div>
+    <span>4、圈</span>
+    <div id="circle"></div>
+    <span>5、椭圆</span>
+    <div id="ellipse"></div>
+    <span>6、上三角</span>
+    <div id="triangle-up"></div>
+    <span>7、下三角</span>
+    <div id="triangle-down"></div>
+    <span>8、左三角</span>
+    <div id="triangle-left"></div>
+    <span>9、右三角</span>
+    <div id="triangle-right"></div>
+    <span>10、顶左</span>
+    <div id="triangle-topleft"></div>
+    <span>11、顶右</span>
+    <div id="triangle-topright"></div>
+    <span>12、底左</span>
+    <div id="triangle-bottomleft"></div>
+    <span>13、底右</span>
+    <div id="triangle-bottomright"></div>
+    <span>14、平行四边形</span>
+    <div id="parallelogram"></div>
+    <span>15、梯形</span>
+    <div id="trapezoid"></div>
+    <span>16、五角星</span>
+    <div id="star-five"></div>
+    <span>17、六角星</span>
+    <div id="star-six"></div>
+    <span>18、五边形</span>
+    <div id="pentagon"></div>
+    <span>19、六边形</span>
+    <div id="hexagon"></div>
+    <span>20、八边形</span>
+    <div id="octagon"></div>
+    <span>21、心形</span>
+    <div id="heart"></div>
+    <span>22、无穷大</span>
+    <div id="infinity"></div>
+    <span>23、鸡蛋</span>
+    <div id="egg"></div>
+    <span>24、吃豆人</span>
+    <div id="pacman"></div>
+    <span>25、提示对话框</span>
+    <div id="talkbubble"></div>
+    <span>26、爆炸-12</span>
+    <div id="burst-12"></div>
+    <span>27、爆炸-8</span>
+    <div id="burst-8"></div>
+    <span>28、钻石</span>
+    <div id="diamond"></div>
+    <span>29、阴阳</span>
+    <div id="yin-yang"></div>
+    <span>30、菱形</span>
+    <div id="rhombus"></div>
+    <span>31、盾形</span>
+    <div id="peltate"></div>
+    <span>32、方块</span>
+    <div id="diamonds"></div>
+    <span>33、箭头</span>
+    <div id="arrows"></div>
+    <span>34、徽章带</span>
+    <div id="badge-ribbon"></div>
 </div>
 </body>
 </html>

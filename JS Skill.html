@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>JS技巧</title>
+    <style type="text/css">
+        #randomColor .demo{
+            width: 100px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            border: 1px solid #CCCCCC;
+        }
+
+    </style>
+</head>
+<body>
+<div id="randomColor">
+    <h3>一、随机色获取</h3>
+    <span>randomColor方法</span>
+    <p>利用toString进制转换原理，将随机数转换成16进制数值，并拼接“#”</p>
+    <div class="demo">演示区</div>
+</div>
+
+
+</body>
+<script type="text/javascript" charset="UTF-8">
+    /*No1:随机色获取*/
+    var randomColor = function () {
+        var random = (~~((Math.random() * (0xffffff - 0x100000)) + 0x100000)).toString(16);
+        return "#" + random;
+    };
+    var randomColorDemo = document.getElementById("randomColor").getElementsByClassName("demo")[0];
+    window.setInterval(function () {
+        randomColorDemo.style.backgroundColor = randomColor();
+    }, 1000);
+
+
+</script>
+</html>

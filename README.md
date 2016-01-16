@@ -8,4 +8,4 @@ url:http://cyl-zf.github.io/data/banner/banner.html
 url:http://cyl-zf.github.io/data/shape.html
 
 3、JS技巧<br/>
-url:http://cyl-zf.github.io/data/JS Skill.html
+url:http://cyl-zf.github.io/data/JS_Skill.html

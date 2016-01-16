@@ -10,5 +10,5 @@ url:http://cyl-zf.github.io/data/shape.html<br/>
 ![image](http://cyl-zf.github.io/data/two-dimension-code/shape.png)
 
 3、JS技巧<br/>
-url:http://cyl-zf.github.io/data/JS Skill.html<br/>
+url:http://cyl-zf.github.io/data/JS_Skill.html<br/>
 ![image](http://cyl-zf.github.io/data/two-dimension-code/JS_Skill.png)

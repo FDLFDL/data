@@ -32,7 +32,6 @@ var getElementsByClass = function (strClass, context) {
     }
     return ary;
 };
-
 var getCss = function (curEle, attr) {
     var reg = /^[+-]?(\d|([1-9]\d+))(\.\d+)?(px|pt|em|rem)$/, val = null;
     if ("getComputedStyle" in window) {
